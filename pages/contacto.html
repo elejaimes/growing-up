@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contáctanos</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo-growingus">
+            <a href="../index.html" class="logo"><img src="../images/logo-mixto-blanco.png" alt="logo-growingus"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="nav__items">Home</a></li>
+                <li class="nav__submenu-item"><a href="../pages/sobre_nosotros.html" class="nav__items">Sobre Nosotros</a>
+                    <ul class="nav__submenu">
+                        <li class="submenu"><a href="./sobre_nosotros.html#vision">Visión</a></li>
+                        <li class="submenu"><a href="./sobre_nosotros.html#mision">Misión</a></li>
+                        <li class="submenu"><a href="./sobre_nosotros.html#valores">Valores</a></li>
+                    </ul>
+                </li>
+                <li><a href="./recursos.html" class="nav__items">Recursos</a></li>
+                <li><a href="./tutoriales.html" class="nav__items">Tutoriales</a></li>
+                <li><a href="./contacto.html" class="nav__items">Contacto</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <div class="title">
+            <h1 class="container">Contacto</h1>
+        </div>
+        <section class="contacto container">
+            <figure class="contacto__texts contacto__img">
+                <img src="../images/contacto-img1.png" class="contacto__picture" alt="imagen-para-contacto">
+            </figure>
+
+            <section class="contacto__texts">
+                <form class="contacto__texts--form">
+                    <fieldset class="contacto__texts--fielset">
+                        <legend class="subtitle">Datos de Contacto</legend>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre">
+                        <label for="telefono-celular">Teléfono / Celular</label>
+                        <input type="text" name="telefono-celular">
+                        <label for="e-mail">Correo Electrónico</label>
+                        <input type="text" name="e-mail">
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="otro">Otro</option> <!-- Posteriormente agregar con JS campo para completar por el usuario -->
+                        </select>
+                        <label for="nombre">¿En qué podemos ayudarte?</label>
+                        <input type="text" name="consulta">
+                        <article class="form__article">
+                            <p>La información personal proporcionada en este formulario será tratada de manera confidencial y solo se utilizará con el propósito de contactarnos. Nos comprometemos a no transferir tus datos personales a terceros sin tu previo consentimiento expreso y por escrito</p>
+                        </article>
+                        <div class="contacto-chbox">
+                            <input type="checkbox" class="checkbox" name="consentimiento-legal" id="e-mail">
+                            <span class="consentimiento">Acepto recibir comunicaciones por correo electrónico de GrowingUs.</span> 
+                        </div>
+                        <article class="form__article">
+                            <p>Puedes darte de baja en cualquier momento desde el enalce en el pie de página que se incluye en cada correo electrónico que enviamos.</p>
+                        </article>
+                        <span class="bottom">Enviar</span>
+                    </fieldset>
+                </form>  
+            </section>
+        </section> 
+    </main>
+</body>
+
+<footer id="footer">
+    <div class="container footer__grid">
+        <div class="logo-growingus">
+            <a href="../index.html" class="logo"><img src="../images/logo-mixto-blanco.png" alt="logo-growingus"></a>
+        </div>
+    
+        <address id="address">
+            <ul>
+                <li>
+                    <h2>Dirección:</h2>
+                    <span>Av. Isabel La Católica 4601, Las Condes, Chile.</span>
+                </li>
+                <li>
+                    <h2>Teléfono:</h2>
+                    <span>+56 9 3730 9793</span>
+                </li>
+                <li>
+                    <h2>Correo electrónico:</h2>
+                    <span>ferbluis143@gmail.com</span>
+                </li>
+            </ul>
+        </address>
+    
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="../index.html" class="nav__items-footer">Home</a></li>
+                <li><a href="./sobre_nosotros.html" class="nav__items--footer">Sobre Nosotros</a></li>
+                <li><a href="./recursos.html" class="nav__items--footer">Recursos</a></li>
+                <li><a href="./tutoriales.html" class="nav__items--footer">Tutoriales</a></li>
+                <li><a href="./contacto.html" class="nav__items--footer">Contacto</a></li>
+            </ul>
+        </nav> 
+    
+        <section class="social-media">
+            <span class="footer-contenedor-redes">
+                <a href="https://www.instagram.com/elejaimes/" target="_blank">
+                    <figure class="img-social-media">
+                        <img src="../images/footer1-instagram.png" alt="logo-de-instagram">
+                        <figcaption>Instagram</figcaption>   
+                    </figure>
+                </a>
+            </span>
+            <span class="footer-contenedor-redes">
+                <a href="https://www.youtube.com/channel/UCJbBwQYFcSWbflSJLAeG57Q" target="_blank">
+                    <figure class="img-social-media">
+                        <img src="../images/footer2-youtube.png" alt="logo-de-youtube">
+                        <figcaption>Youtube</figcaption>   
+                    </figure>
+                </a>
+            </span>
+            <span class="footer-contenedor-redes">
+                <a href="https://twitter.com/elejaimes_" target="_blank">
+                    <figure class="img-social-media">
+                        <img src="../images/footer3-twitter.png" alt="logo-de-twitter">
+                        <figcaption>Twitter</figcaption>   
+                    </figure>
+                </a>
+            </span>
+            <span class="footer-contenedor-redes">
+                <a href="https://www.facebook.com/luis.jaimes.1293" target="_blank">
+                    <figure class="img-social-media">
+                        <img src="../images/footer4-facebook.png" alt="logo-de-facebook">
+                        <figcaption>Facebook</figcaption>   
+                    </figure>
+                </a>
+            </span>
+        </section>
+    
+        <div class="copyright">
+            <p>Derechos reservados &copy;2023</p>
+        </div>
+    </div>
+</footer>
+</html>
