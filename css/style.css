@@ -92,11 +92,11 @@ img {
     font-size: 25px;
 }
 
-p {
+/* p {
     margin-bottom: 30px;
     height: 300px;
     padding: 20px;
-}
+} */
 
 /*header*/
 
@@ -104,12 +104,13 @@ header {
     background-color: var(--color-quaternary);
 }
 
-.container-fluid {
+header .container-fluid {
     height: 300px;
 }
 
 .nav-item {
     color: var(--color-primary);
+    text-shadow: 2px 2px 0px #000000; 
     font-size: 30px;
     margin: 0px 20px;
 }
@@ -167,6 +168,24 @@ nav li {
 
 
 /*index*/
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-item img.d-block {
+    opacity: 70%
+}
+
+.d-md-block p {
+    color: var(--color-tertiary);
+    font-size: 40px;
+    margin-bottom: 35px;
+    text-shadow: 3px 3px 3px #000000;
+    font-weight: 700;
+}
 
 .presentation, h2 {
     padding-top: 0;
