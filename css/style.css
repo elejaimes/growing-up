@@ -340,9 +340,10 @@ header .container-fluid {
 .form-label {
     color: var(--color-primary);
     text-shadow: 2px 2px 0px #000000;
+    font-size: 20px;
 }
 .form-text {
-    color:#ffffff
+    color:#ffffff;
 }
 
 /*footer*/
@@ -513,5 +514,8 @@ address ul li h2 {
 
     .contacto__picture {
         display: none;
+    }
+    .form-label {
+        font-size: 20px;
     }
 }
