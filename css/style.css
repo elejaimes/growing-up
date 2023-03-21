@@ -468,13 +468,25 @@ address ul li h2 {
         font-size: 15px;
     } 
 
+    .footer {
+        display: block;
+    }
+
      /*index*/
 
     .noticia {
         grid-template-columns: 1fr;
     }
 
-    .footer {
-        display: block;
+    /*sobre nosotros*/
+
+    .sobre-nosotros-grid {
+        grid-template-columns: 1fr;
     }
+    .sobre-nosotros-grid .sobre-nosotros__img--mobile-order-1 {
+        order: -1;
+    }
+    .sobre-nosotros-grid .sobre-nosotros__texts--mobile-order1 {
+        order: 1;
+    }        
 }
