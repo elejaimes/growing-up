@@ -270,7 +270,7 @@ header .container-fluid {
 
 /*tutoriales*/
 
-.tutoriales__grids {
+.tutoriales__grid {
     display: grid;
     height: 1020px;
     grid-template-areas:
@@ -346,8 +346,9 @@ fieldset {
     margin: 20px auto;
     width: 75%;
     height: 30px;
-    border-radius: 10px;
-} */
+    border-radius: 10px; 
+}*/
+
 .contacto-chbox {
     display: flex;
     margin-inline: 20px;
@@ -452,6 +453,10 @@ address ul li h2 {
         font-size: 40px;
     }
 
+    .container {
+        margin-bottom: 70px;
+    }
+
     .subtitle {
         font-size: 25px;
     }
@@ -482,11 +487,43 @@ address ul li h2 {
 
     .sobre-nosotros-grid {
         grid-template-columns: 1fr;
+        row-gap: 20px;
+        width: 90%;
     }
     .sobre-nosotros-grid .sobre-nosotros__img--mobile-order-1 {
         order: -1;
     }
     .sobre-nosotros-grid .sobre-nosotros__texts--mobile-order1 {
         order: 1;
-    }        
+    }  
+    
+    /*recursos*/
+
+    .recursos-grid {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        width: 90%;
+    }
+    .recursos-grid .recurso__img--mobile-order-1 {
+        order: -1;
+    }
+    .recursos-grid .recurso__img--left {
+        text-align: center;
+    }
+    .recurso__texts--mobile-order1 {
+        order: 1;
+    }
+    .recurso__texts .bottom {
+        display: inline-block;
+        margin-bottom: 70px;
+    }
+
+     /*tutoriales*/
+
+     .tutoriales__grid {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+     }
+
 }
