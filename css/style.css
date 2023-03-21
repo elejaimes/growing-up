@@ -39,6 +39,7 @@ h1, .presentation__title {
     margin: 0.67em 0;
     color: var(--color-tertiary);
     text-shadow: 2px 2px 0px #000000;
+    text-align: center;
 }
 
 .subtitle {
@@ -336,44 +337,19 @@ header .container-fluid {
     box-shadow: 2px 2px 0px #000000;
 }
 
-fieldset {
-    padding: 0.35em 0.75em 0.625em;
+.form-label {
+    color: var(--color-primary);
+    text-shadow: 2px 2px 0px #000000;
 }
-
-/* legend, label, input, select {
-    display: block;
-    text-align: center;
-    margin: 20px auto;
-    width: 75%;
-    height: 30px;
-    border-radius: 10px; 
-}*/
-
-.contacto-chbox {
-    display: flex;
-    margin-inline: 20px;
-}
-.checkbox {
-    flex: 1 1 10%;
-    cursor: pointer;
-}
-.consentimiento {
-    flex: 1 1 80%;
-    margin-top: 20px;
-}
-
-fieldset .bottom {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 30%;
-    cursor: pointer;
+.form-text {
+    color:#ffffff
 }
 
 /*footer*/
 
 footer {
     background-color: var(--color-quaternary);
+    text-align: center;
 }
 
 .footer {
@@ -429,8 +405,6 @@ address ul li h2 {
 }
 
 /*media queries*/
-/*tablet*/
-@media only screen and (max-width: 768px){}
 
 /*mobile*/
 @media only screen and (max-width: 576px){
@@ -477,6 +451,10 @@ address ul li h2 {
         display: block;
     }
 
+    .footer__contenedor-social-media {
+        justify-content: center;
+    }
+
      /*index*/
 
     .noticia {
@@ -518,12 +496,22 @@ address ul li h2 {
         margin-bottom: 70px;
     }
 
-     /*tutoriales*/
+    /*tutoriales*/
 
-     .tutoriales__grid {
+    .tutoriales__grid {
         display: flex;
         flex-direction: column;
         margin: 0 10%;
-     }
+    }
 
+    /*contacto*/
+
+    .contacto {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+
+    .contacto__picture {
+        display: none;
+    }
 }
