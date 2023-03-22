@@ -461,6 +461,9 @@ address ul li h2 {
 
     /*index*/
 
+    .d-md-block p {
+        font-size: 20px;
+    }
     .noticia {
         grid-template-columns: 1fr;
     }
