@@ -20,6 +20,7 @@
     --color-tertiary: #ffffff;
     --color-secondary: #355675;
     --color-quaternary: #1e304a;
+    --color-shadow: #000000;
     --bottom-padding: 15px 30px;
 }
 
@@ -46,7 +47,7 @@ h1, .presentation__title {
     font-size: 60px;
     margin: 0.67em 0;
     color: var(--color-tertiary);
-    text-shadow: 2px 2px 0px #000000;
+    text-shadow: 2px 2px 0px var(--color-shadow);
     text-align: center;
 }
 
@@ -54,7 +55,8 @@ h1, .presentation__title {
     color: var(--color-primary);
     font-size: 40px;
     margin-bottom: 35px;
-    text-shadow: 2px 2px 0px #000000;
+    text-shadow: 2px 2px 0px var(--color-shadow);
+    text-align: center;
 }
 
 .paragraph {
@@ -90,7 +92,7 @@ a {
     display: inline-block;
     background: var(--color-tertiary);
     padding: var(--bottom-padding);
-    color: #000000;
+    color: var(--color-quaternary);
     text-decoration: none;
     border-radius: 40px;
     font-weight: 700;
@@ -110,7 +112,7 @@ header {
         height: 300px;
         .nav-item {
             color: var(--color-primary);
-            text-shadow: 2px 2px 0px #000000; 
+            text-shadow: 2px 2px 0px var(--color-shadow); 
             font-size: 20px;
         }
         .mt-3 {
@@ -145,9 +147,12 @@ footer {
     }
     .footer__nav {
         grid-area: nv;
+        .footer-nav__items {
+            font-size: 15px;
+        }
         li:hover {
-            background-color: rgba(0, 0, 0, 0.2);
-        } 
+            background-color: var(--color-primary);
+        }
     }
     .footer__contenedor-social-media {
         grid-area: social;
@@ -162,7 +167,8 @@ footer {
     h2 {
         color: var(--color-primary);
         margin: 10px auto;
-        text-shadow: 2px 2px 0px #000000;
+        text-shadow: 2px 2px 0px var(--color-shadow);
+        font-size: 15px;
     }
     .footer__contenedor-social-media {
         margin: 50px;
