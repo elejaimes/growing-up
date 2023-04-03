@@ -1,0 +1,33 @@
+.contacto {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+}
+
+.contacto__texts {
+    margin: 20px;
+}
+
+.contacto__img {
+    text-align: center;
+}
+
+.contacto__picture {
+    max-width: 100%;
+    min-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 2px 2px 0px #000000;
+}
+
+.form-label {
+    color: var(--color-primary);
+    text-shadow: 2px 2px 0px #000000;
+    font-size: 20px;
+}
+.form-text {
+    color:#ffffff;
+}
