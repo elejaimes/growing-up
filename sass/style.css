@@ -129,12 +129,7 @@
   color: #ffffff;
 }
 
-/*estilos generales*/
-* {
-  padding: 0;
-  margin: 0;
-}
-
+/*variables*/
 :root {
   --color-primary: #abcacf;
   --color-tertiary: #ffffff;
@@ -142,6 +137,12 @@
   --color-quaternary: #1e304a;
   --color-shadow: #000000;
   --bottom-padding: 15px 30px;
+}
+
+/*estilos generales*/
+* {
+  padding: 0;
+  margin: 0;
 }
 
 html {

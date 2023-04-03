@@ -5,6 +5,17 @@
 @import "tutoriales";
 @import "contacto";
 
+/*variables*/
+
+:root {
+    --color-primary: #abcacf;
+    --color-tertiary: #ffffff;
+    --color-secondary: #355675;
+    --color-quaternary: #1e304a;
+    --color-shadow: #000000;
+    --bottom-padding: 15px 30px;
+}
+
 /*estilos generales*/
 
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&display=swap');
@@ -15,14 +26,7 @@
     margin: 0;
 }
 
-:root {
-    --color-primary: #abcacf;
-    --color-tertiary: #ffffff;
-    --color-secondary: #355675;
-    --color-quaternary: #1e304a;
-    --color-shadow: #000000;
-    --bottom-padding: 15px 30px;
-}
+
 
 html {
     line-height: 1.5; 
