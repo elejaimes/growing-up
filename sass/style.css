@@ -136,6 +136,7 @@
   --color-secondary: #355675;
   --color-quaternary: #1e304a;
   --color-shadow: #000000;
+  --color-highlight: #8b0a92;
   --bottom-padding: 15px 30px;
 }
 
@@ -170,6 +171,10 @@ h1, .presentation__title {
   color: var(--color-tertiary);
   text-shadow: 2px 2px 0px var(--color-shadow);
   text-align: center;
+}
+
+strong {
+  color: var(--color-highlight);
 }
 
 .subtitle {
