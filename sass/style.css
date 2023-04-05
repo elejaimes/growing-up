@@ -566,29 +566,26 @@ footer .footer__copyright {
     font-size: 15px;
   }
   footer .footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "logo" "address" "social" "copyright";
+    display: block;
   }
-  .footer__logo {
-    grid-area: logo;
+  footer .footer .footer__logo img {
+    width: 50%;
   }
-  .footer__address {
-    grid-area: address;
+  footer .footer .footer__nav {
+    display: none;
   }
-  .footer__nav {
-    grid-area: nv;
+  footer .footer .footer__contenedor-social-media {
+    margin: 0px;
+    flex-wrap: wrap;
   }
-  .footer__contenedor-social-media {
-    grid-area: social;
+  footer .footer .footer__contenedor-social-media .footer__social-media {
+    margin: 10px;
   }
-  .footer__copyright {
-    grid-area: copyright;
+  footer .footer .footer__contenedor-social-media .footer__social-media img {
+    height: 30px;
+    text-decoration: none;
   }
-  .footer__contenedor-social-media {
-    justify-content: center;
-  }
-  .footer__nav {
+  footer .footer .footer__contenedor-social-media .footer__social-media figcaption {
     display: none;
   }
   /*index*/
