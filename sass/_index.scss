@@ -12,12 +12,12 @@
         color: var(--color-tertiary);
         font-size: 40px;
         margin-bottom: 35px;
-        text-shadow: 3px 3px 3px #000000;
+        text-shadow: 3px 3px 3px var(--color-shadow);
         font-weight: 700;
     }
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    background-color: black;
+    background-color: var(--color-shadow);
     border-radius: 50%;
 }
 
@@ -34,7 +34,7 @@
         .noticia__img {
             max-width: 80%;
             border-radius: 40px;
-            box-shadow: 3px 3px 0px #000000;
+            box-shadow: 3px 3px 0px var(--color-shadow);
         }
     }
 }

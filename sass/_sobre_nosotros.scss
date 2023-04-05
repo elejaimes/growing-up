@@ -10,7 +10,7 @@
         .sobre-nosotros__picture {
             max-width: 80%;
             border-radius: 40px;
-            box-shadow: 2px 2px 0px #000000;
+            box-shadow: 2px 2px 0px var(--color-shadow);
         }
     }
     .sobre-nosotros__img--left {
@@ -21,7 +21,7 @@
         margin-bottom: 10px;
         margin-top: 10px;
         margin-left: 5px;
-        text-shadow: 2px 2px 0px #000000;
+        text-shadow: 2px 2px 0px var(--color-shadow);
         text-decoration: underline;
     }
 }

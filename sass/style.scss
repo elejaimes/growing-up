@@ -4,8 +4,12 @@
 @import "recursos";
 @import "tutoriales";
 @import "contacto";
+@import "mixins";
 
 /*variables*/
+
+$shadow: 3px 3px 3px #000000;
+
 
 :root {
     --color-primary: #abcacf;
@@ -17,6 +21,20 @@
     --bottom-padding: 15px 30px;
 }
 
+/*maps*/
+
+$fonts: (
+    h1: 4rem,
+    h2: 3.5rem,
+    h3: 1.75rem,
+    h4: 1.5rem
+);
+@each $title, $size in $fonts {
+    #{$title} {
+        font-size: $size;
+    }
+}
+
 /*estilos generales*/
 
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&display=swap');
@@ -26,8 +44,6 @@
     padding: 0;
     margin: 0;
 }
-
-
 
 html {
     line-height: 1.5; 
@@ -48,11 +64,10 @@ body {
     text-align: center;
 }
 
-h1, .presentation__title {
-    font-size: 60px;
+h1 {
     margin: 0.67em 0;
     color: var(--color-tertiary);
-    text-shadow: 2px 2px 0px var(--color-shadow);
+    text-shadow: $shadow;
     text-align: center;
 }
 
@@ -62,9 +77,8 @@ strong {
 
 .subtitle {
     color: var(--color-primary);
-    font-size: 40px;
     margin-bottom: 35px;
-    text-shadow: 2px 2px 0px var(--color-shadow);
+    text-shadow: $shadow;
     text-align: center;
 }
 
@@ -79,7 +93,7 @@ strong {
     width: 80%;
     margin: 0 auto;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 ul li{
@@ -118,10 +132,9 @@ a {
 header {
     background-color: var(--color-quaternary);
     .container-fluid {
-        height: 300px;
         .nav-item {
             color: var(--color-primary);
-            text-shadow: 2px 2px 0px var(--color-shadow); 
+            text-shadow: $shadow; 
             font-size: 20px;
         }
         .mt-3 {
@@ -144,9 +157,8 @@ footer {
     .footer {
         gap: 10px;
         align-items: center;
-        display: grid;
-        grid-template-areas: "logo address nv social"
-                             "copyright address nv social";                   
+        @include grid-template-area-footer; 
+                          
     }
     .footer__logo {
         grid-area: logo;
@@ -173,11 +185,10 @@ footer {
         padding: 0;
         margin-bottom: 0;
     }
-    h2 {
+    h4 {
         color: var(--color-primary);
         margin: 10px auto;
-        text-shadow: 2px 2px 0px var(--color-shadow);
-        font-size: 15px;
+        text-shadow: $shadow;
     }
     .footer__contenedor-social-media {
         margin: 50px;
@@ -215,7 +226,7 @@ footer {
         flex-wrap: nowrap;
     }
 
-    h1, .title, .presentation__title{
+    h1{
         font-size: 40px;
     }
 
@@ -336,7 +347,7 @@ footer {
         flex-wrap: nowrap;
     }
 
-    h1, .title, .presentation__title{
+    h1{
         font-size: 40px;
     }
 
