@@ -567,7 +567,7 @@ footer .footer__copyright {
   }
   footer .footer {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1fr;
     grid-template-areas: "logo" "address" "social" "copyright";
   }
   .footer__logo {
