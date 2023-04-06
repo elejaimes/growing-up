@@ -452,6 +452,9 @@ footer .footer__copyright {
     font-weight: 300;
     text-align: justify;
   }
+  .presentation__text {
+    width: 95%;
+  }
   .bottom {
     padding: 10px 10px;
     margin: 5px auto;
@@ -559,6 +562,9 @@ footer .footer__copyright {
     font-size: 20px;
     font-weight: 300;
     text-align: justify;
+  }
+  .presentation__text {
+    width: 95%;
   }
   .bottom {
     padding: 10px 10px;
