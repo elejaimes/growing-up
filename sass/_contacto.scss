@@ -10,16 +10,16 @@
         .contacto__picture {
             max-width: 80%;
             border-radius: 40px;
-            box-shadow: 2px 2px 0px var(--color-shadow);
+            box-shadow: 2px 2px 0px $color-shadow;
         }
     }
     .form-label {
-        color: var(--color-primary);
-        text-shadow: 2px 2px 0px var(--color-shadow);
+        color: $color-primary;
+        text-shadow: 2px 2px 0px $color-shadow;
         font-size: 20px;
     }
     .form-text {
-        color:var(--color-tertiary);
+        color:$color-tertiary;
     }
 }
 

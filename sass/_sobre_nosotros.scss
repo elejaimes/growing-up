@@ -1,19 +1,39 @@
+#team {
+    margin: 10px auto;
+    align-self: center;
+    color: $color-secondary;
+    text-shadow: 3px 3px 3px $color-tertiary;
+    font-weight: bold;
+    min-width: 540px;
+}
 .team {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: -webkit-linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
+    background-image: -moz-linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
+    background-image: -o-linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
+    background-image: linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
+    padding: 64px 0 100px;
+    -webkit-clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
+    clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
+    -moz-clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
+    -o-clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
     .card{
+        margin: 20px 10px;
+        background: -webkit-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary) ;
+        background: -moz-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary) ;
+        background: -o-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary) ;
+        background: linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary) ;
         h5 {
-            color: var(--color-primary);
-            text-shadow: 3px 3px 3px #000000;
+            color: $color-primary;
+            text-shadow: 3px 3px 3px $color-shadow;
         }
-        margin: 20px auto;
-        background-color: var(--color-quaternary);
         img {
             border-radius: 5%;
         }
         .card-text {
-            color: var(--color-primary);
+            color: $color-primary;
         }
     }
 }
@@ -30,18 +50,18 @@
         .sobre-nosotros__picture {
             max-width: 80%;
             border-radius: 40px;
-            box-shadow: 2px 2px 0px var(--color-shadow);
+            box-shadow: 2px 2px 0px $color-shadow;
         }
     }
     .sobre-nosotros__img--left {
         text-align: left;
     }
     h3{
-        color: var(--color-primary);
+        color: $color-primary;
         margin-bottom: 10px;
         margin-top: 10px;
         margin-left: 5px;
-        text-shadow: 2px 2px 0px var(--color-shadow);
+        text-shadow: 2px 2px 0px $color-shadow;
         text-decoration: underline;
     }
 }
