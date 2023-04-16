@@ -57,7 +57,7 @@ body {
     margin: 0 auto;
     margin-bottom: 30px;
     overflow: hidden;
-    max-width: 1920px;
+    max-width: 95%;
     text-align: center;
 }
 
@@ -118,7 +118,14 @@ a {
     font-weight: 700;
     font-size: 25px;
     margin: 30px auto;
+    &:hover {
+        background: -webkit-linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
+        background: -moz-linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
+        background: -o-linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
+        background: linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
+    }
 }
+
 
 .logo {
     width: 250px;

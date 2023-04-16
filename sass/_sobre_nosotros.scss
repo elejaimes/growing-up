@@ -1,5 +1,5 @@
 #team {
-    margin: 10px auto;
+    margin: 20px 10px;
     align-self: center;
     color: $color-secondary;
     text-shadow: 3px 3px 3px $color-tertiary;
@@ -14,17 +14,17 @@
     background-image: -moz-linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
     background-image: -o-linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
     background-image: linear-gradient(240deg, $color-tertiary 0%, $color-primary 100%);
-    padding: 64px 0 100px;
+    padding: 100px 0 100px;
     -webkit-clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
     clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
     -moz-clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
     -o-clip-path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
     .card{
         margin: 20px 10px;
-        background: -webkit-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary) ;
-        background: -moz-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary) ;
-        background: -o-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary) ;
-        background: linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary) ;
+        background: -webkit-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary);
+        background: -moz-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary);
+        background: -o-linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary);
+        background: linear-gradient(220deg, $color-quaternary 55%, $color-secondary, $color-primary);
         h5 {
             color: $color-primary;
             text-shadow: 3px 3px 3px $color-shadow;
