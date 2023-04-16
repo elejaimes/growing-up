@@ -1,3 +1,23 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card{
+        h5 {
+            color: var(--color-primary);
+            text-shadow: 3px 3px 3px #000000;
+        }
+        margin: 20px auto;
+        background-color: var(--color-quaternary);
+        img {
+            border-radius: 5%;
+        }
+        .card-text {
+            color: var(--color-primary);
+        }
+    }
+}
+
 .sobre-nosotros-grid {
     min-height: 400px;
     display: grid;

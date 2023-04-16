@@ -1,11 +1,3 @@
-
-@import "index";
-@import "sobre_nosotros";
-@import "recursos";
-@import "tutoriales";
-@import "contacto";
-@import "mixins";
-
 /*variables*/
 
 $shadow: 3px 3px 3px #000000;
@@ -20,6 +12,15 @@ $shadow: 3px 3px 3px #000000;
     --color-highlight: #8b0a92;
     --bottom-padding: 15px 30px;
 }
+
+// Partials //
+
+@import "index";
+@import "sobre_nosotros";
+@import "recursos";
+@import "tutoriales";
+@import "contacto";
+@import "mixins";
 
 /*maps*/
 
@@ -459,6 +460,9 @@ footer {
         display: inline-block;
         margin-bottom: 70px;
     }
+    .team .card img {
+        width: 50%;
+    }
 
     /*tutoriales*/
 
@@ -570,7 +574,10 @@ footer {
     }
     .sobre-nosotros-grid .sobre-nosotros__texts--mobile-order1 {
         order: 1;
-    }  
+    } 
+    .team .card img {
+        width: 50%;
+    }
     
     /*recursos*/
 
