@@ -170,11 +170,6 @@
 .tutoriales__grid .tutoriales__items:hover .tutoriales__hover {
   transform: translateX(0%);
 }
-.tutoriales__grid .tutorial__video {
-  width: 85%;
-  height: 85%;
-  border-radius: 10px;
-}
 
 .contacto {
   min-height: 400px;
@@ -307,6 +302,14 @@ a {
 
 .logo {
   width: 250px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+.row {
+  row-gap: 2rem;
 }
 
 /*header*/
