@@ -1,25 +1,63 @@
 .tutoriales__grid {
     display: grid;
-    height: 1020px;
+    min-height: 300px;
     grid-template-areas:
-    "video1 video2"
-    "video3 video4";
+    "img1 img2"
+    "img3 img4";
     gap: 50px;
-    .tutorial__items:nth-of-type(1) {
-        grid-area: video1;
+    .tutoriales__items:nth-of-type(1) {
+        grid-area: img1;
     }
-    .tutorial__items:nth-of-type(2) {
-        grid-area: video2;
+    .tutoriales__items:nth-of-type(2) {
+        grid-area: img2;
     }
-    .tutorial__items:nth-of-type(3) {
-        grid-area: video3;
+    .tutoriales__items:nth-of-type(3) {
+        grid-area: img3;
     }
-    .tutorial__items:nth-of-type(4) {
-        grid-area: video4;
+    .tutoriales__items:nth-of-type(4) {
+        grid-area: img4;
     }
-    .tutorial__video {
+    .tutoriales__items {
+        position: relative;
         width: 100%;
         height: 100%;
+        overflow: hidden;
+        box-shadow: 3px 3px 3px $color-shadow;
+        .tutoriales__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .tutoriales__hover {
+            position: absolute;
+            background: $color-transparent; 
+            border-radius: 5px; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: $color-primary;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transform: translateX(100%);
+            cursor: pointer;
+            transition: transform .3s ease-in-out;
+            a {
+                color: unset;
+            }   
+        }
+        &:hover .tutoriales__hover {
+            transform: translateX(0%);
+        }
+    }
+
+    
+
+    .tutorial__video {
+        width: 85%;
+        height: 85%;
         border-radius: 10px;
     }
 }

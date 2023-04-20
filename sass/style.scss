@@ -5,6 +5,7 @@ $color-primary: #abcacf;
 $color-tertiary: #ffffff;
 $color-secondary: #355675;
 $color-quaternary: #1e304a;
+$color-transparent: #1e304acf;
 $color-shadow: #000000;
 $color-highlight: #8b0a92;
 $bottom-padding: 15px 30px;
@@ -206,7 +207,15 @@ footer {
                 img {
                     height: inherit;
                     text-decoration: none;
+                    transition: transform 0.3s ease-in-out;
+                    margin: 2px 4px;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
+                figcaption {
+                    margin: 2px 2px;
+                };
             }
         }
     }

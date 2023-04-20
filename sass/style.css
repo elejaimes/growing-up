@@ -118,25 +118,61 @@
 
 .tutoriales__grid {
   display: grid;
-  height: 1020px;
-  grid-template-areas: "video1 video2" "video3 video4";
+  min-height: 300px;
+  grid-template-areas: "img1 img2" "img3 img4";
   gap: 50px;
 }
-.tutoriales__grid .tutorial__items:nth-of-type(1) {
-  grid-area: video1;
+.tutoriales__grid .tutoriales__items:nth-of-type(1) {
+  grid-area: img1;
 }
-.tutoriales__grid .tutorial__items:nth-of-type(2) {
-  grid-area: video2;
+.tutoriales__grid .tutoriales__items:nth-of-type(2) {
+  grid-area: img2;
 }
-.tutoriales__grid .tutorial__items:nth-of-type(3) {
-  grid-area: video3;
+.tutoriales__grid .tutoriales__items:nth-of-type(3) {
+  grid-area: img3;
 }
-.tutoriales__grid .tutorial__items:nth-of-type(4) {
-  grid-area: video4;
+.tutoriales__grid .tutoriales__items:nth-of-type(4) {
+  grid-area: img4;
 }
-.tutoriales__grid .tutorial__video {
+.tutoriales__grid .tutoriales__items {
+  position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px #000000;
+}
+.tutoriales__grid .tutoriales__items .tutoriales__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.tutoriales__grid .tutoriales__items .tutoriales__hover {
+  position: absolute;
+  background: rgba(30, 48, 74, 0.8117647059);
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #abcacf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(100%);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.tutoriales__grid .tutoriales__items .tutoriales__hover a {
+  color: unset;
+}
+.tutoriales__grid .tutoriales__items:hover .tutoriales__hover {
+  transform: translateX(0%);
+}
+.tutoriales__grid .tutorial__video {
+  width: 85%;
+  height: 85%;
   border-radius: 10px;
 }
 
@@ -348,6 +384,14 @@ footer .footer__contenedor-social-media .footer__social-media .img-social-media 
 footer .footer__contenedor-social-media .footer__social-media .img-social-media img {
   height: inherit;
   text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  margin: 2px 4px;
+}
+footer .footer__contenedor-social-media .footer__social-media .img-social-media img:hover {
+  transform: scale(1.1);
+}
+footer .footer__contenedor-social-media .footer__social-media .img-social-media figcaption {
+  margin: 2px 2px;
 }
 footer .footer__copyright {
   font-style: italic;
