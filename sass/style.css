@@ -121,6 +121,7 @@
   min-height: 300px;
   grid-template-areas: "img1 img2" "img3 img4";
   gap: 50px;
+  margin: 3rem;
 }
 .tutoriales__grid .tutoriales__items:nth-of-type(1) {
   grid-area: img1;
@@ -251,7 +252,7 @@ strong {
 
 .subtitle {
   color: #abcacf;
-  margin-bottom: 35px;
+  margin-bottom: 1.5rem;
   text-shadow: 3px 3px 3px #000000;
   text-align: center;
 }
@@ -309,7 +310,7 @@ iframe {
 }
 
 .row {
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 /*header*/

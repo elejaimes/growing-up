@@ -5,6 +5,7 @@
     "img1 img2"
     "img3 img4";
     gap: 50px;
+    margin: 3rem;
     .tutoriales__items:nth-of-type(1) {
         grid-area: img1;
     }
