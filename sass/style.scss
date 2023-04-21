@@ -360,6 +360,18 @@ header img, footer .footer__logo img {
         display: flex;
         flex-direction: column;
         margin: 0 10%;
+        .tutoriales__items {
+            box-shadow: none;
+            .tutoriales__hover {
+                position: relative;
+                background: none;
+                transform: translate(0);
+                margin-top: 10px;
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        } 
     }
 
     /*contacto*/
@@ -514,6 +526,18 @@ header img, footer .footer__logo img {
         display: flex;
         flex-direction: column;
         margin: 0 10%;
+        .tutoriales__items {
+            box-shadow: none;
+            .tutoriales__hover {
+                position: relative;
+                background: none;
+                transform: translate(0);
+                margin-top: 10px;
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        } 
     }
 
     /*contacto*/
@@ -662,6 +686,18 @@ header img, footer .footer__logo img {
         display: flex;
         flex-direction: column;
         margin: 0 10%;
+        .tutoriales__items {
+            box-shadow: none;
+            .tutoriales__hover {
+                position: relative;
+                background: none;
+                transform: translate(0);
+                margin-top: 10px;
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        } 
     }
 
     /*contacto*/

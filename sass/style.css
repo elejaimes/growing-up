@@ -500,6 +500,18 @@ footer .footer__copyright {
     flex-direction: column;
     margin: 0 10%;
   }
+  .tutoriales__grid .tutoriales__items {
+    box-shadow: none;
+  }
+  .tutoriales__grid .tutoriales__items .tutoriales__hover {
+    position: relative;
+    background: none;
+    transform: translate(0);
+    margin-top: 10px;
+  }
+  .tutoriales__grid .tutoriales__items .tutoriales__hover h2 {
+    font-size: 25px;
+  }
   /*contacto*/
   .contacto {
     grid-template-columns: 1fr;
@@ -619,6 +631,18 @@ footer .footer__copyright {
     display: flex;
     flex-direction: column;
     margin: 0 10%;
+  }
+  .tutoriales__grid .tutoriales__items {
+    box-shadow: none;
+  }
+  .tutoriales__grid .tutoriales__items .tutoriales__hover {
+    position: relative;
+    background: none;
+    transform: translate(0);
+    margin-top: 10px;
+  }
+  .tutoriales__grid .tutoriales__items .tutoriales__hover h2 {
+    font-size: 25px;
   }
   /*contacto*/
   .contacto {
@@ -742,6 +766,18 @@ footer .footer__copyright {
     display: flex;
     flex-direction: column;
     margin: 0 10%;
+  }
+  .tutoriales__grid .tutoriales__items {
+    box-shadow: none;
+  }
+  .tutoriales__grid .tutoriales__items .tutoriales__hover {
+    position: relative;
+    background: none;
+    transform: translate(0);
+    margin-top: 10px;
+  }
+  .tutoriales__grid .tutoriales__items .tutoriales__hover h2 {
+    font-size: 25px;
   }
   /*contacto*/
   .contacto {
